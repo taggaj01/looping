@@ -11,9 +11,9 @@
     --red-size: 73px;
     --blue-size: 55px;
     --car-size: 6px;
-    --car-color: #01f0d0;
     --duration: 1200;
     --spacing: 0.5;
+    --main: #b78482;
   }
 
   body {
@@ -21,7 +21,7 @@
     height: 100vh;
     display: grid;
     place-items: center;
-    background: #f4f1ec;
+    background: #f0f0f0;
   }
 
   .themepark-loader {
@@ -37,7 +37,8 @@
   }
 
   .loop-red {
-    border-color: #ff4136;
+    /* border-color: #ff4136; */
+    border-color: var(--main);
     width: var(--red-size);
     height: var(--red-size);
     top: 34px;
@@ -45,7 +46,8 @@
   }
 
   .loop-blue {
-    border-color: #0074d9;
+    /* border-color: #0074d9; */
+    border-color: var(--main);
     width: var(--blue-size);
     height: var(--blue-size);
     top: 54px;
@@ -56,12 +58,11 @@
     position: absolute;
     width: var(--car-size);
     height: var(--car-size);
-    background: var(--car-color);
+    background: var(--main);
     border-radius: 50%;
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
     box-shadow: 0 0 8px #0006;
     transform: translate(-50%, -50%);
-    z-index: 10;
   }
 
   .entrance {
@@ -74,7 +75,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 11;
+    z-index: 1;
   }
 
   .entrance-roof {
@@ -82,8 +83,8 @@
     height: 18px;
     background: repeating-linear-gradient(
       90deg,
-      #e31ce0 0 13px,
-      #e6d811 13px 26px
+      var(--main) 0 13px,
+      var(--main) 13px 26px
     );
     clip-path: polygon(
       0 100%, 10% 30%, 20% 100%, 30% 30%, 40% 100%, 
@@ -96,7 +97,8 @@
   .entrance-body {
     width: 70px;
     height: 20px;
-    background: #ffe066;
+    /* background: #ffe066; */
+    background: var(--main);
     border: 2px solid #a59d95;
     border-radius: 0 0 8px 8px;
     position: relative;
@@ -106,7 +108,7 @@
     position: absolute;
     width: 16px;
     height: 14px;
-    background: #fff;
+    background: #ffffffbd;
     border: 2px solid #a59d95;
     border-radius: 0 0 6px 6px;
     left: 50%;
